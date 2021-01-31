@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Cars, Useds Car,... Cars.com now</title>
+	<meta charset="utf-8">
+	<link rel="shorcut icon" href="img/title-logo.png">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="div-feedback"><a href="#">Feedback</a></div>
+	<nav class="navbar navbar-expand-sm" id="nav-menu">
+		<a href="index.html" style="margin: -10px 10rem auto;"><img src="img/logo.png" style="height: 5rem; width: 10rem;"></a>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Cars for Sale</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Sell Your Car</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Service & Repair</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Research</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Videos & Reviews</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact Us</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" style="height: 20px; width: 20px">Sign up</a>
+			</li>
+		</ul>
+	</nav>
+	<div id="div-suggest"><a href="#">What's the Best New-Car Deal for January? &#10095</a></div>
+	<div id="div-carousel">
+		<div class="carousel slide" data-ride="carousel" data-interval="3000">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/banner1.png" class="img-banner">
+				</div>
+				<div class="carousel-item">
+					<img src="img/banner2.png" class="img-banner">
+				</div>
+				<div class="carousel-item">
+					<img src="img/banner3.png" class="img-banner">
+				</div>
+				<div class="carousel-item">
+					<img src="img/banner4.png" class="img-banner">
+				</div>
+			</div>
+		</div>
+		<p id="p-carousel">Find your<br>next match</p>
+	</div>
+	<div id="div-search">
+		<form action = "#" id="form-search">
+			<ul>
+				<li>
+					<input id="ip-search-make" type="radio" value="make" name="searchType" onchange="ok();" hidden checked>
+					<label for="ip-search-make" id="label-search-make">Search by Make</label>
+				</li>
+				<li>
+					<input id="ip-search-body" type="radio" value="body" name="searchType" onchange="ok();" hidden>
+					<label for="ip-search-body" id="label-search-body">Search by Body Style</label>
+				</li>
+			</ul>
+			<div id="div-search-2">
+				<div id="div-grid-search">
+					<div class="search-item1">
+						<select class="select-search">
+							<option>New & Used Cars</option>
+							<option>New Cars</option>	
+							<option>Used Cars</option>
+							<option>Certified Cars</option>
+						</select>
+					</div>
+					<div class="search-item2">
+						<select class="select-search">
+							<option>All Makes</option>
+							<option>Acura</option>
+							<option>Audi</option>
+							<option>BMW</option>
+							<option>Bugatti</option>
+							<option>Cadillac</option>
+							<option selected>Chevrolet</option>
+							<option>Daewoo</option>
+							<option>Daihatsu</option>
+							<option>Dodge</option>
+							<option>Eagle</option>
+							<option>Fereari</option>
+							<option>Kia</option>
+							<option>Lamborghini</option>
+							<option>Land Rover</option>
+							<option>Lexus</option>
+							<option>Lincoln</option>
+							<option>Lotus</option>
+							<option>Maybach</option>
+							<option>Mazda</option>
+							<option>McLaren</option>
+							<option>Mercedes-Benz</option>
+							<option>Mercury</option>
+							<option>Nissan</option>	
+						</select>
+					</div>
+					<div class="search-item3">
+						<select class="select-search">
+							<option>All Models</option>
+						</select>
+					</div>
+					<div class="search-item4">
+						<select class="select-search">
+							<option>No Max Price</option>
+							<option>$6,000</option>	
+							<option>$8,000</option>
+							<option>$10,000</option>
+							<option>$15,000</option>
+							<option>$20,000</option>
+							<option>$25,000</option>
+							<option>$30,000</option>
+							<option>$35,000</option>
+							<option>$40,000</option>
+							<option>$45,000</option>
+							<option>$50,000</option>
+							<option>$55,000</option>
+							<option>$60,000</option>
+							<option>$65,000</option>
+							<option>$70,000</option>
+							<option>$75,000</option>
+							<option>$80,000</option>
+							<option>$85,000</option>
+							<option>$90,000</option>
+							<option>$95,000</option>
+							<option>$100,000</option>	
+						</select>
+					</div>
+					<div class="search-item5">
+						<select class="select-search">
+							<option>10 Miles from</option>
+							<option selected>20 Miles from</option>
+							<option>30 Miles from</option>
+							<option>40 Miles from</option>	
+							<option>50 Miles from</option>
+							<option>75 Miles from</option>	
+							<option>100 Miles from</option>
+							<option>150 Miles from</option>		
+							<option>200 Miles from</option>
+							<option>250 Miles from</option>	
+							<option>500 Miles from</option>
+							<option>All Miles from</option>
+						</select>
+					</div>
+					<div class="search-item6">
+						<input type="text" placeholder="ZIP" maxlength="10">
+					</div>
+					<div class="search-item7">
+						<button>Search</button>
+					</div>
+				</div>
+			</div>
+			<div id="div-search-3" hidden>
+				<div id="div-grid-search-2">
+					<div class="search-body-item1">
+						<select id="a" class="select-search">
+							<option>All Body Styles</option>
+							<option>Cargo Van</option>
+							<option>Convertible</option>
+							<option>Couple</option>
+							<option>Crew Cab Pickup</option>
+							<option>Extended Cab Pickup</option>
+							<option>Hatchback</option>
+							<option>Minivan</option>
+							<option>Passenger Van</option>
+							<option>Regular Cab Pickup</option>
+							<option>Sedan</option>
+							<option>SUV</option>
+							<option>Wagon</option>
+						</select>
+					</div>
+					<div class="search-body-item2">
+						<select class="select-search">
+							<option>New & Used Cars</option>
+							<option>New Cars</option>	
+							<option>Used Cars</option>
+							<option>Certified Cars</option>
+						</select>
+					</div>
+					<div class="search-body-item3">
+						<select class="select-search">
+							<option>No Max Price</option>
+							<option>$6,000</option>	
+							<option>$8,000</option>
+							<option>$10,000</option>
+							<option>$15,000</option>
+							<option>$20,000</option>
+							<option>$25,000</option>
+							<option>$30,000</option>
+							<option>$35,000</option>
+							<option>$40,000</option>
+							<option>$45,000</option>
+							<option>$50,000</option>
+							<option>$55,000</option>
+							<option>$60,000</option>
+							<option>$65,000</option>
+							<option>$70,000</option>
+							<option>$75,000</option>
+							<option>$80,000</option>
+							<option>$85,000</option>
+							<option>$90,000</option>
+							<option>$95,000</option>
+							<option>$100,000</option>
+						</select>
+					</div>
+					<div class="search-body-item4">
+						<select class="select-search">
+							<option>10 Miles from</option>
+							<option selected>20 Miles from</option>
+							<option>30 Miles from</option>
+							<option>40 Miles from</option>	
+							<option>50 Miles from</option>
+							<option>75 Miles from</option>	
+							<option>100 Miles from</option>
+							<option>150 Miles from</option>		
+							<option>200 Miles from</option>
+							<option>250 Miles from</option>	
+							<option>500 Miles from</option>
+							<option>All Miles from</option>
+						</select>
+					</div>
+					<div class="search-body-item5">
+						<input type="text" placeholder="ZIP" maxlength="10">
+					</div>
+					<div class="search-body-item6">
+						<button>Search</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="div-trend">
+		<p class="p-content-title">Trending Near You</p>
+		<ul id="ul-trend">
+			<li>
+				<a href="#">
+					<div class="div-trend-title">
+						<label>2021 Polestar2: Review - Cars.com</label>
+					</div>
+					<span class="circle" id="tam2"></span>
+					<span class="triangle"></span>
+					<img src="img/trend1.png">
+				</a>
+			</li>
+			<li></li>
+			<li>
+				<a href="#" id="tam">
+					<div class="div-trend-title">
+						<label>AWD Vs 4WD: What's the Difference?</label>
+					</div>
+					<span class="circle" id="tam2"></span>
+					<span class="triangle"></span>
+					<img src="img/trend2.png">
+				</a>
+			</li>
+			<li></li>
+			<li>
+				<a href="#">
+					<div class="div-trend-title">
+						<label>Used Under $10,000</label>
+					</div>
+					<span class="circle" id="tam2"></span>
+					<span class="triangle"></span>
+					<img src="img/trend3.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="direct">
+		<ul id="ul-direct">
+			<li>
+				<a href="#">
+					<div class="div-direct-item">
+						<img class="direct-img" src="img/direct1.png">
+						<div class="direct-text">
+							<h6>Download the Cars.com App, today!</h6>
+							<p>Get price drops, VIN Scan & more &#10095</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-direct-item">
+						<img class="direct-img" src="img/direct2.png">
+						<div class="direct-text">
+							<h6>Cars.com News</h6>
+							<p>What you need to be informed from now until you buy, all in one place &#10095</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-direct-item">
+						<img class="direct-img" src="img/direct3.png">
+						<div class="direct-text">
+							<h6>Over one million reviews</h6>
+							<p>Choose a salesperson you like, meet a car you'll love &#10095</p>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<p class="p-content-title">Research Car Models</p>
+	<p class="p-content-title2">Start with type</p>
+	<div id="div-content-car">
+		<ul id="ul-content-car">
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car1.png" class="img-car">
+						<span class="span-car">Sedan</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car2.png" class="img-car">
+						<span class="span-car">Couple</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car3.png" class="img-car">
+						<span class="span-car">SUV</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car4.png" class="img-car">
+						<span class="span-car">Crossover</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car5.png" class="img-car">
+						<span class="span-car">Wagon/Hatchback</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car6.png" class="img-car">
+						<span class="span-car">Green Car/Hybrid</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car7.png" class="img-car">
+						<span class="span-car">Convertible</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car8.png" class="img-car">
+						<span class="span-car">Sports Car</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car9.png" class="img-car">
+						<span class="span-car">Pickup Truck</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car10.png" class="img-car">
+						<span class="span-car">Minivan/Van</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car11.png" class="img-car">
+						<span class="span-car">Luxury Car</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="div-content-car-item">
+						<img src="img/car12.png" class="img-car">
+						<span class="span-car">Certified Pre-Own</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<p class="p-content-title2">Start with make</p>
+	<div id="div-content-make">
+		<ul id="ul-content-make">
+			<li>
+				<a href="#">Acura</a>
+			</li>
+			<li>
+				<a href="#">Alfa Romeo</a>
+			</li>
+			<li>
+				<a href="#">Aston Martin</a>
+			</li>
+			<li>
+				<a href="#">Audi</a>
+			</li>
+			<li>
+				<a href="#">Acura</a>
+			</li>
+			<li>
+				<a href="#">Bentley</a>
+			</li>
+			<li>
+				<a href="#">BMW</a>
+			</li>
+			<li>
+				<a href="#">Buick</a>
+			</li>
+			<li>
+				<a href="#">Cadillac</a>
+			</li>
+			<li>
+				<a href="#">Chevrolet</a>
+			</li>
+			<li>
+				<a href="#">Chrysler</a>
+			</li>
+			<li>
+				<a href="#">Dodge</a>
+			</li>
+			<li>
+				<a href="#">Ferrari</a>
+			</li>
+			<li>
+				<a href="#">FIAT</a>
+			</li>
+			<li>
+				<a href="#">Ford</a>
+			</li>
+			<li>
+				<a href="#">Genesis</a>
+			</li>
+			<li>
+				<a href="#">GMC</a>
+			</li>
+			<li>
+				<a href="#">Honda</a>
+			</li>
+			<li>
+				<a href="#">Hyundai</a>
+			</li>
+			<li>
+				<a href="#">INFINITI</a>
+			</li>
+			<li>
+				<a href="#">Jaguar</a>
+			</li>
+			<li>
+				<a href="#">Jeep</a>
+			</li>
+			<li>
+				<a href="#">Kia</a>
+			</li>
+			<li>
+				<a href="#">Lamborghini</a>
+			</li>
+			<li>
+				<a href="#">Land Rover</a>
+			</li>
+			<li>
+				<a href="#">Lexus</a>
+			</li>
+			<li>
+				<a href="#">Lincoln</a>
+			</li>
+			<li>
+				<a href="#">Lotus</a>
+			</li>
+			<li>
+				<a href="#">Maserati</a>
+			</li>
+			<li>
+				<a href="#">Mazda</a>
+			</li>
+			<li>
+				<a href="#">McLaren</a>
+			</li>
+			<li>
+				<a href="#">Mercedes-Benz</a>
+			</li>
+			<li>
+				<a href="#">MINI</a>
+			</li>
+			<li>
+				<a href="#">Mitsubishi</a>
+			</li>
+			<li>
+				<a href="#">Nissan</a>
+			</li>
+			<li>
+				<a href="#">Porsche</a>
+			</li>
+			<li>
+				<a href="#">RAM</a>
+			</li>
+			<li>
+				<a href="#">Rolls-Royce</a>
+			</li>
+			<li>
+				<a href="#">Scion</a>
+			</li>
+			<li>
+				<a href="#">smart</a>
+			</li>
+			<li>
+				<a href="#">Subaru</a>
+			</li>
+			<li>
+				<a href="#">Tesla</a>
+			</li>
+			<li>
+				<a href="#">Toyota</a>
+			</li>
+			<li>
+				<a href="#">Volkswagen</a>
+			</li>
+			<li>
+				<a href="#">Volvo</a>
+			</li>
+		</ul>
+	</div>
+	<p class="p-content-title">New Car Reviews</p>
+	<p class="p-content-title3">Our expert reviewers report back with the latest</p>
+	<ul class="ul-review">
+		<li>
+			<a href="#">
+				<div class="div-review">
+					<img class="img-review" src="img/review1.png">
+					<p class="p-review-title">2021 Acura TLX</p>
+					<p class="p-review-content">The new TLX should be on the shopping list for anyone still considering a proper sports sedan over an SUV. <span>Read more</span></p>
+					<img class="img-review-person" src="img/review-person1.png">
+					<p class="p-review-person">by Aaron Bragman<br>Detroit Bureau Chief</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="div-review">
+					<img class="img-review" src="img/review2.png">
+					<p class="p-review-title">2021 Nissan Armada</p>
+					<p class="p-review-content">The Armada improves to make it a more well-rounded SUV, but Nissan went small while competitors took big leaps. <span>Read more</span></p>
+					<img class="img-review-person" src="img/review-person2.png">
+					<p class="p-review-person">by Brian Normile<br>Production Editor</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="div-find-review">
+		<a href="#">Find Reviews for a Specific Car</a>
+	</div>
+	<div style="height: 500px; width: 500px"></div>
+</body>
+<script type="text/javascript">
+	function ok(){
+		if(document.getElementById("ip-search-make").checked == true){
+			document.getElementById("div-search-2").removeAttribute("hidden");
+			document.getElementById("div-search-3").setAttribute("hidden","");
+		}
+		else if(document.getElementById("ip-search-body").checked == true){
+			document.getElementById("div-search-2").setAttribute("hidden","");
+			document.getElementById("div-search-3").removeAttribute("hidden");
+		}
+	}
+</script>
+</html>
